@@ -95,5 +95,52 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="obr\01.png" />
+    <Resource Include="obr\11.png" />
+    <Resource Include="obr\12.png" />
+    <Resource Include="obr\13.png" />
+    <Resource Include="obr\14.png" />
+    <Resource Include="obr\15.png" />
+    <Resource Include="obr\21.png" />
+    <Resource Include="obr\22.png" />
+    <Resource Include="obr\23.png" />
+    <Resource Include="obr\24.png" />
+    <Resource Include="obr\25.png" />
+    <Resource Include="obr\31.png" />
+    <Resource Include="obr\32.png" />
+    <Resource Include="obr\33.png" />
+    <Resource Include="obr\34.png" />
+    <Resource Include="obr\35.png" />
+    <Resource Include="obr\41.png" />
+    <Resource Include="obr\42.png" />
+    <Resource Include="obr\43.png" />
+    <Resource Include="obr\44.png" />
+    <Resource Include="obr\45.png" />
+    <Resource Include="obr\51.png" />
+    <Resource Include="obr\52.png" />
+    <Resource Include="obr\53.png" />
+    <Resource Include="obr\54.png" />
+    <Resource Include="obr\55.png" />
+    <Resource Include="obr\set1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="obr\ostatni\51.png" />
+    <Resource Include="obr\ostatni\52.png" />
+    <Resource Include="obr\ostatni\53.png" />
+    <Resource Include="obr\ostatni\54.png" />
+    <Resource Include="obr\ostatni\55.png" />
+    <Resource Include="obr\ostatni\c1.png" />
+    <Resource Include="obr\ostatni\c2.png" />
+    <Resource Include="obr\ostatni\Diamond_Shape.png" />
+    <Resource Include="obr\ostatni\h1.png" />
+    <Resource Include="obr\ostatni\h3.png" />
+    <Resource Include="obr\ostatni\h4.png" />
+    <Resource Include="obr\ostatni\heart-outline.png" />
+    <Resource Include="obr\ostatni\w1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)obr\*.*" "obr" /Y /I /E</PostBuildEvent>
+  </PropertyGroup>
 </Project>
